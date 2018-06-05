@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>reactjsweb</title>
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<!-- react-transition-group is required by reactstrap -->
+<script src="https://unpkg.com/react-transition-group@2.2.1/dist/react-transition-group.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reactstrap/4.8.0/reactstrap.min.js" charset="utf-8"></script>
+
+
+<script src="js/app.js" type="text/babel"></script>
+
+  <body>
+    <p id="here">This is a test3</p>
+    <div id="root">put newReact here</div>
+
+    <div id="btn"></div>
+
+<!-- //take this part of app.js and include in this file
+<script type="text/babel">
+
+  ReactDOM.render(<h1>Hello next!</h1>, document.getElementById("root"));
+</script>
+-->
+
+
+<script type="text/babel">
+
+// import the components from reactstrap
+const {Button} = Reactstrap; //destructuring assingment of components extract Button javascript object
+//Render a Reactstrap Button element onto root
+ReactDOM.render(
+  <Button color="danger">click me2</Button>, document.getElementById('btn') );
+
+</script>
+
+
+
+  </body>
+</html>

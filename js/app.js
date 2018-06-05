@@ -1,3 +1,6 @@
 
-console.log('app.js react js file loaded');
-  ReactDOM.render(<h1>Hello next!</h1>, document.getElementById("root"));
+console.log('app.js react js file begins loading');
+  ReactDOM.render(<h3>drf pro!</h3>, document.getElementById("root"));
+
+
+console.log('app.js react js file finished loading');
